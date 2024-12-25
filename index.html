@@ -105,6 +105,7 @@
   background-color: #f7f7f7;
 }
 
+
 .curved-navbar {
     position: relative;
     background: linear-gradient(90deg, #4CAF50, #2A9D8F);
@@ -114,19 +115,20 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-  }
-   /* Wave-shaped curve */
-   .curved-navbar::after {
+}
+
+/* Further reduced curve */
+.curved-navbar::after {
     content: '';
     position: absolute;
-    bottom: -30px;
+    bottom: -5px; /* Even less vertical shift */
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 15px; /* Even more reduced height */
     background: linear-gradient(to bottom, #4CAF50, #ffffff);
-    border-radius: 0 0 50% 50%;
+    border-radius: 0 0 10% 10%; /* Reduce the roundness further */
     z-index: -1;
-  }
+}
 
   /* Brand section */
   .brand {
